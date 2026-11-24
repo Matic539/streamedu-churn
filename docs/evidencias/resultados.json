@@ -1,0 +1,487 @@
+{
+  "generado": "2026-11-24T12:44:42+00:00",
+  "equipo": {
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "python": "3.13.0"
+  },
+  "base": "streamedu_db",
+  "conteos_colecciones": {
+    "active_customers": 6,
+    "evaluaciones": 2,
+    "historical_customers": 1000,
+    "metricas_modelo": 2,
+    "retention_actions": 3
+  },
+  "modelo": {
+    "version_modelo": "4eefde7493e5",
+    "fecha_entrenamiento": "2026-11-24T12:43:34+00:00",
+    "semilla": 44,
+    "epocas": 35,
+    "versiones": {
+      "tensorflow": "2.21.0",
+      "keras": "3.15.1",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "metricas": {
+    "red_neuronal": {
+      "accuracy": 0.74,
+      "precision": 0.7391304347826086,
+      "recall": 0.6,
+      "f1": 0.6623376623376623,
+      "auc": 0.7942710997442455,
+      "brier": 0.1804965748615841,
+      "matriz_confusion": {
+        "vn": 97,
+        "fp": 18,
+        "fn": 34,
+        "vp": 51
+      }
+    },
+    "n_entrenamiento": 800,
+    "n_prueba": 200,
+    "tasa_churn_total": 0.425,
+    "tasa_churn_prueba": 0.425,
+    "linea_base_accuracy": 0.575,
+    "parametros": 241,
+    "usa_escalador": true,
+    "regresion_logistica": {
+      "accuracy": 0.77,
+      "precision": 0.7746478873239436,
+      "recall": 0.6470588235294118,
+      "f1": 0.7051282051282052,
+      "auc": 0.8116624040920716,
+      "brier": 0.17477656602914637,
+      "matriz_confusion": {
+        "vn": 99,
+        "fp": 16,
+        "fn": 30,
+        "vp": 55
+      }
+    },
+    "oraculo": {
+      "accuracy": 0.76,
+      "precision": 0.7605633802816901,
+      "recall": 0.6352941176470588,
+      "f1": 0.6923076923076923,
+      "auc": 0.8141176470588235,
+      "brier": 0.17376897890448795,
+      "matriz_confusion": {
+        "vn": 98,
+        "fp": 17,
+        "fn": 31,
+        "vp": 54
+      }
+    },
+    "reinicios": [
+      {
+        "semilla": 42,
+        "val_loss": 0.5173738598823547,
+        "test_accuracy": 0.745,
+        "test_auc": 0.7858823529411765
+      },
+      {
+        "semilla": 43,
+        "val_loss": 0.5052108764648438,
+        "test_accuracy": 0.745,
+        "test_auc": 0.8010230179028134
+      },
+      {
+        "semilla": 44,
+        "val_loss": 0.4923761785030365,
+        "test_accuracy": 0.74,
+        "test_auc": 0.7942710997442455
+      },
+      {
+        "semilla": 45,
+        "val_loss": 0.5163924694061279,
+        "test_accuracy": 0.745,
+        "test_auc": 0.7996930946291559
+      },
+      {
+        "semilla": 46,
+        "val_loss": 0.49686211347579956,
+        "test_accuracy": 0.74,
+        "test_auc": 0.8015345268542199
+      }
+    ],
+    "semilla_elegida": 44
+  },
+  "experimento_escalador": {
+    "filas": [
+      {
+        "usa_escalador": true,
+        "semilla": 42,
+        "accuracy": 0.745,
+        "auc": 0.7858823529411765,
+        "perdida_final": 0.5563095808029175,
+        "probabilidades": {
+          "ACT-001": 0.8915391564369202,
+          "ACT-002": 0.880888044834137,
+          "ACT-003": 0.3023526966571808,
+          "ACT-004": 0.36480712890625,
+          "ACT-005": 0.3023526966571808
+        }
+      },
+      {
+        "usa_escalador": true,
+        "semilla": 43,
+        "accuracy": 0.745,
+        "auc": 0.8010230179028134,
+        "perdida_final": 0.5312858819961548,
+        "probabilidades": {
+          "ACT-001": 0.872743546962738,
+          "ACT-002": 0.873731791973114,
+          "ACT-003": 0.028409691527485847,
+          "ACT-004": 0.4060688614845276,
+          "ACT-005": 0.049010422080755234
+        }
+      },
+      {
+        "usa_escalador": true,
+        "semilla": 44,
+        "accuracy": 0.74,
+        "auc": 0.7942710997442455,
+        "perdida_final": 0.5420176982879639,
+        "probabilidades": {
+          "ACT-001": 0.9102840423583984,
+          "ACT-002": 0.9149574041366577,
+          "ACT-003": 0.02689351513981819,
+          "ACT-004": 0.3978348970413208,
+          "ACT-005": 0.03237498924136162
+        }
+      },
+      {
+        "usa_escalador": true,
+        "semilla": 45,
+        "accuracy": 0.745,
+        "auc": 0.7996930946291559,
+        "perdida_final": 0.5328055024147034,
+        "probabilidades": {
+          "ACT-001": 0.8832718133926392,
+          "ACT-002": 0.8861662149429321,
+          "ACT-003": 0.020917799323797226,
+          "ACT-004": 0.358614444732666,
+          "ACT-005": 0.037148088216781616
+        }
+      },
+      {
+        "usa_escalador": true,
+        "semilla": 46,
+        "accuracy": 0.74,
+        "auc": 0.8015345268542199,
+        "perdida_final": 0.5410716533660889,
+        "probabilidades": {
+          "ACT-001": 0.8429397344589233,
+          "ACT-002": 0.8282172679901123,
+          "ACT-003": 0.02603532187640667,
+          "ACT-004": 0.4001096785068512,
+          "ACT-005": 0.06187264993786812
+        }
+      },
+      {
+        "usa_escalador": false,
+        "semilla": 42,
+        "accuracy": 0.72,
+        "auc": 0.7628132992327366,
+        "perdida_final": 0.5963362455368042,
+        "probabilidades": {
+          "ACT-001": 0.7902753353118896,
+          "ACT-002": 0.881416916847229,
+          "ACT-003": 0.12646760046482086,
+          "ACT-004": 0.48672759532928467,
+          "ACT-005": 0.2599624693393707
+        }
+      },
+      {
+        "usa_escalador": false,
+        "semilla": 43,
+        "accuracy": 0.705,
+        "auc": 0.7572378516624041,
+        "perdida_final": 0.5653238296508789,
+        "probabilidades": {
+          "ACT-001": 0.8438057899475098,
+          "ACT-002": 0.9182929992675781,
+          "ACT-003": 0.0903732180595398,
+          "ACT-004": 0.5600342750549316,
+          "ACT-005": 0.15470530092716217
+        }
+      },
+      {
+        "usa_escalador": false,
+        "semilla": 44,
+        "accuracy": 0.69,
+        "auc": 0.751304347826087,
+        "perdida_final": 0.586788535118103,
+        "probabilidades": {
+          "ACT-001": 0.8016706109046936,
+          "ACT-002": 0.758585512638092,
+          "ACT-003": 0.14982838928699493,
+          "ACT-004": 0.49255630373954773,
+          "ACT-005": 0.19184601306915283
+        }
+      },
+      {
+        "usa_escalador": false,
+        "semilla": 45,
+        "accuracy": 0.71,
+        "auc": 0.7577493606138108,
+        "perdida_final": 0.5734235644340515,
+        "probabilidades": {
+          "ACT-001": 0.8141507506370544,
+          "ACT-002": 0.8377312421798706,
+          "ACT-003": 0.09715212881565094,
+          "ACT-004": 0.5168153047561646,
+          "ACT-005": 0.22643710672855377
+        }
+      },
+      {
+        "usa_escalador": false,
+        "semilla": 46,
+        "accuracy": 0.685,
+        "auc": 0.7443478260869566,
+        "perdida_final": 0.586873471736908,
+        "probabilidades": {
+          "ACT-001": 0.7657443881034851,
+          "ACT-002": 0.8131511211395264,
+          "ACT-003": 0.06510026007890701,
+          "ACT-004": 0.4854765832424164,
+          "ACT-005": 0.2760187089443207
+        }
+      }
+    ],
+    "media_con": 0.743,
+    "media_sin": 0.702,
+    "auc_con": 0.7964808184143223,
+    "auc_sin": 0.754690537084399,
+    "perdida_con": 0.5406980633735656,
+    "perdida_sin": 0.5817491292953492
+  },
+  "actividad1": [
+    {
+      "customer_id": "ACT-001",
+      "nombre": "Ana Gomez",
+      "meses_antiguedad": 14,
+      "probabilidad": 0.9103,
+      "probabilidad_real": 0.8839,
+      "decision": {
+        "nivel_riesgo": "CRITICO",
+        "es_cliente_vip": true,
+        "ltv_acumulado_usd": 406.0,
+        "accion_comercial": "Llamada urgente de Ejecutivo Cuenta + 30% Descuento por 3 meses",
+        "presupuesto_asignado_usd": 26.1,
+        "es_super_vip": false,
+        "segmento": "VIP",
+        "clasificacion": "CRÍTICO VIP",
+        "probabilidad_usada": 0.9103
+      }
+    },
+    {
+      "customer_id": "ACT-002",
+      "nombre": "Carlos Ruiz",
+      "meses_antiguedad": 2,
+      "probabilidad": 0.915,
+      "probabilidad_real": 0.8693,
+      "decision": {
+        "nivel_riesgo": "CRITICO",
+        "es_cliente_vip": false,
+        "ltv_acumulado_usd": 58.0,
+        "accion_comercial": "Email automatizado con Cupon 15% Descuento el proximo mes",
+        "presupuesto_asignado_usd": 4.35,
+        "es_super_vip": false,
+        "segmento": "ESTANDAR",
+        "clasificacion": "CRÍTICO ESTÁNDAR",
+        "probabilidad_usada": 0.915
+      }
+    },
+    {
+      "customer_id": "ACT-003",
+      "nombre": "Lucia Fernandez",
+      "meses_antiguedad": 20,
+      "probabilidad": 0.0269,
+      "probabilidad_real": 0.0199,
+      "decision": {
+        "nivel_riesgo": "BAJO (SEGURO)",
+        "es_cliente_vip": true,
+        "ltv_acumulado_usd": 580.0,
+        "accion_comercial": "Ninguna accion (No interrumpir ni regalar margen)",
+        "presupuesto_asignado_usd": 0.0,
+        "es_super_vip": true,
+        "segmento": null,
+        "clasificacion": "BAJO (SEGURO)",
+        "probabilidad_usada": 0.0269
+      }
+    },
+    {
+      "customer_id": "ACT-004",
+      "nombre": "Pedro Soto",
+      "meses_antiguedad": 8,
+      "probabilidad": 0.3978,
+      "probabilidad_real": 0.4403,
+      "decision": {
+        "nivel_riesgo": "BAJO (SEGURO)",
+        "es_cliente_vip": true,
+        "ltv_acumulado_usd": 232.0,
+        "accion_comercial": "Ninguna accion (No interrumpir ni regalar margen)",
+        "presupuesto_asignado_usd": 0.0,
+        "es_super_vip": false,
+        "segmento": null,
+        "clasificacion": "BAJO (SEGURO)",
+        "probabilidad_usada": 0.3978
+      }
+    },
+    {
+      "customer_id": "ACT-005",
+      "nombre": "Elena Castro",
+      "meses_antiguedad": 1,
+      "probabilidad": 0.0324,
+      "probabilidad_real": 0.0752,
+      "decision": {
+        "nivel_riesgo": "BAJO (SEGURO)",
+        "es_cliente_vip": false,
+        "ltv_acumulado_usd": 29.0,
+        "accion_comercial": "Ninguna accion (No interrumpir ni regalar margen)",
+        "presupuesto_asignado_usd": 0.0,
+        "es_super_vip": false,
+        "segmento": null,
+        "clasificacion": "BAJO (SEGURO)",
+        "probabilidad_usada": 0.0324
+      }
+    }
+  ],
+  "presupuesto_actividad1": 30.45,
+  "corrida_super_vip": {
+    "corrida_id": "20261124T124441Z-d8fabd",
+    "filas": [
+      {
+        "customer_id": "ACT-001",
+        "nombre": "Ana Gomez",
+        "meses_antiguedad": 14,
+        "probabilidad": 0.9103,
+        "probabilidad_real": 0.8839,
+        "decision": {
+          "nivel_riesgo": "CRITICO",
+          "es_cliente_vip": true,
+          "ltv_acumulado_usd": 406.0,
+          "accion_comercial": "Llamada urgente de Ejecutivo Cuenta + 30% Descuento por 3 meses",
+          "presupuesto_asignado_usd": 26.1,
+          "es_super_vip": false,
+          "segmento": "VIP",
+          "clasificacion": "CRÍTICO VIP",
+          "probabilidad_usada": 0.9103
+        }
+      },
+      {
+        "customer_id": "ACT-002",
+        "nombre": "Carlos Ruiz",
+        "meses_antiguedad": 2,
+        "probabilidad": 0.915,
+        "probabilidad_real": 0.8693,
+        "decision": {
+          "nivel_riesgo": "CRITICO",
+          "es_cliente_vip": false,
+          "ltv_acumulado_usd": 58.0,
+          "accion_comercial": "Email automatizado con Cupon 15% Descuento el proximo mes",
+          "presupuesto_asignado_usd": 4.35,
+          "es_super_vip": false,
+          "segmento": "ESTANDAR",
+          "clasificacion": "CRÍTICO ESTÁNDAR",
+          "probabilidad_usada": 0.915
+        }
+      },
+      {
+        "customer_id": "ACT-003",
+        "nombre": "Lucia Fernandez",
+        "meses_antiguedad": 20,
+        "probabilidad": 0.0269,
+        "probabilidad_real": 0.0199,
+        "decision": {
+          "nivel_riesgo": "BAJO (SEGURO)",
+          "es_cliente_vip": true,
+          "ltv_acumulado_usd": 580.0,
+          "accion_comercial": "Ninguna accion (No interrumpir ni regalar margen)",
+          "presupuesto_asignado_usd": 0.0,
+          "es_super_vip": true,
+          "segmento": null,
+          "clasificacion": "BAJO (SEGURO)",
+          "probabilidad_usada": 0.0269
+        }
+      },
+      {
+        "customer_id": "ACT-004",
+        "nombre": "Pedro Soto",
+        "meses_antiguedad": 8,
+        "probabilidad": 0.3978,
+        "probabilidad_real": 0.4403,
+        "decision": {
+          "nivel_riesgo": "BAJO (SEGURO)",
+          "es_cliente_vip": true,
+          "ltv_acumulado_usd": 232.0,
+          "accion_comercial": "Ninguna accion (No interrumpir ni regalar margen)",
+          "presupuesto_asignado_usd": 0.0,
+          "es_super_vip": false,
+          "segmento": null,
+          "clasificacion": "BAJO (SEGURO)",
+          "probabilidad_usada": 0.3978
+        }
+      },
+      {
+        "customer_id": "ACT-005",
+        "nombre": "Elena Castro",
+        "meses_antiguedad": 1,
+        "probabilidad": 0.0324,
+        "probabilidad_real": 0.0752,
+        "decision": {
+          "nivel_riesgo": "BAJO (SEGURO)",
+          "es_cliente_vip": false,
+          "ltv_acumulado_usd": 29.0,
+          "accion_comercial": "Ninguna accion (No interrumpir ni regalar margen)",
+          "presupuesto_asignado_usd": 0.0,
+          "es_super_vip": false,
+          "segmento": null,
+          "clasificacion": "BAJO (SEGURO)",
+          "probabilidad_usada": 0.0324
+        }
+      },
+      {
+        "customer_id": "ACT-006",
+        "nombre": "Martina Rojas",
+        "meses_antiguedad": 24,
+        "probabilidad": 0.9145,
+        "probabilidad_real": 0.9503,
+        "decision": {
+          "nivel_riesgo": "CRITICO",
+          "es_cliente_vip": true,
+          "ltv_acumulado_usd": 696.0,
+          "accion_comercial": "1 Mes Gratis + Mentoría 1 a 1",
+          "presupuesto_asignado_usd": 49.0,
+          "es_super_vip": true,
+          "segmento": "SUPER_VIP",
+          "clasificacion": "CRÍTICO SUPER VIP",
+          "probabilidad_usada": 0.9145
+        }
+      }
+    ]
+  },
+  "registro_super_vip": {
+    "customer_id": "ACT-006",
+    "estado_campana": "PENDIENTE_EJECUCION",
+    "corrida_id": "20261124T124441Z-d8fabd",
+    "decision_negocio": {
+      "nivel_riesgo": "CRITICO",
+      "es_cliente_vip": true,
+      "ltv_acumulado_usd": 696.0,
+      "accion_comercial": "1 Mes Gratis + Mentoría 1 a 1",
+      "presupuesto_asignado_usd": 49.0,
+      "es_super_vip": true,
+      "segmento": "SUPER_VIP",
+      "clasificacion": "CRÍTICO SUPER VIP",
+      "probabilidad_usada": 0.9145
+    },
+    "fecha_actualizacion": "2026-11-24 12:44:41.510000+00:00",
+    "fecha_creacion": "2026-11-24 12:44:41.510000+00:00",
+    "modelo_version": "4eefde7493e5",
+    "nombre": "Martina Rojas",
+    "probabilidad_churn": 0.9145
+  }
+}
